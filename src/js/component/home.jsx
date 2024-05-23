@@ -1,18 +1,20 @@
 import React from "react";
 import Card from "./Card";
-import SimpleCounter from "./SimpleCounter";
+import Countdown from "./countdown";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
+
 
 //create your first component
 const Home = () => {
 	return (
-		<div >
-		<Card/>
-		
-		 <SimpleCounter/>	
-		 </div>);
+		<div>
+			<Countdown/>
+		  <Card/>
+		  
+		 </div> 
+		 
+		)
 };
 
 

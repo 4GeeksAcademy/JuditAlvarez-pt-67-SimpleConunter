@@ -1,3 +1,11 @@
-.card{
-    height: 400px;
+.col{
+    height: 150px;
 }
+.custom-border{
+    border-width: 5px;
+    border-style: solid;
+}
+.text-color {
+    color: #be56be;
+  }
+  
