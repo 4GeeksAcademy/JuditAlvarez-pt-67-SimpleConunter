@@ -1,40 +1,56 @@
-import React from 'react';
-import Icon from './icon';
+import React from "react";
+import Icon from "./icon";
 import ReactDOM from "react-dom";
 
-
-const Card = ( props) => {
-    return (
-        <div className="container text-center d-flex">
-        <div className="row bg-dark">
-          <div className="col bg-dark m-5 border border-light custom-border">
-            <div className="pt-4">
-            <Icon/>
-            </div>
-           
-          </div>
-          <div className="six col bg-dark m-5 border border-light custom-border text-color text-center" style={{fontSize:"100px"}}>
-            {props.numberSix}
-          </div>
-          <div className="four col bg-dark m-5 border border-light custom-border text-color text-center" style={{fontSize:"100px"}}>
-            {props.numberFive}
-          </div>
-          <div className="four col bg-dark m-5 border border-light custom-border text-color text-center" style={{fontSize:"100px"}}>
-            {props.numberFour}
-          </div>
-          <div className="three col bg-dark m-5 border border-light custom-border text-color text-center"style={{fontSize:"100px"}}>
-            {props.numberThree}
-          </div>
-          <div className="two col bg-dark m-5 border border-light custom-border text-color text-center"style={{fontSize:"100px"}}>
-            {props.numberTwo}
-          </div>
-          <div className="one col bg-dark m-5 border border-light custom-border text-color text-center" style={{fontSize:"100px"}}>
-            {props.numberOne}
+const Card = (props) => {
+  return (
+    <div className="container text-center d-flex">
+      <div className="row bg-dark">
+        <div className="col bg-dark m-5 border border-light custom-border">
+          <div className="pt-4">
+            <Icon />
           </div>
         </div>
+        <div
+          className="six col bg-dark m-5 border border-light custom-border text-color text-center"
+          style={{ fontSize: "100px" }}
+        >
+          {props.numberSix}
+        </div>
+        <div
+          className="four col bg-dark m-5 border border-light custom-border text-color text-center"
+          style={{ fontSize: "100px" }}
+        >
+          {props.numberFive}
+        </div>
+        <div
+          className="four col bg-dark m-5 border border-light custom-border text-color text-center"
+          style={{ fontSize: "100px" }}
+        >
+          {props.numberFour}
+        </div>
+        <div
+          className="three col bg-dark m-5 border border-light custom-border text-color text-center"
+          style={{ fontSize: "100px" }}
+        >
+          {props.numberThree}
+        </div>
+        <div
+          className="two col bg-dark m-5 border border-light custom-border text-color text-center"
+          style={{ fontSize: "100px" }}
+        >
+          {props.numberTwo}
+        </div>
+        <div
+          className="one col bg-dark m-5 border border-light custom-border text-color text-center"
+          style={{ fontSize: "100px" }}
+        >
+          {props.numberOne}
+        </div>
       </div>
-    )
-}
+    </div>
+  );
+};
 let counter = 0;
 
 const updateCounter = () => {
@@ -54,7 +70,7 @@ const updateCounter = () => {
       numberFive={numberFive}
       numberSix={numberSix}
     />,
-    document.getElementById('app')
+    document.getElementById("app"),
   );
 
   counter++;
